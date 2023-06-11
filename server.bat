@@ -1,7 +1,7 @@
 
 @REM @echo off
-npm i
-set port=3000
-explorer http://localhost:%port%
-@REM start chrome http://localhost:%port%
+@REM npm i
+@REM set port=3000
 node ./index.js
+explorer http://localhost:3000
+@REM start chrome http://localhost:%port%
