@@ -11,8 +11,6 @@ const getUserList = (callback) => {exec(
         let users = stdout
         .slice(stdout.lastIndexOf('-') + 1)
         .match(/([A-Za-zА-Яа-я0-9_]+)/g)
-
-        console.log(`Func:getUserList stdout: ${users}`);
         callback(users)
 
     }
