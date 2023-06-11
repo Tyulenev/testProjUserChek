@@ -1,5 +1,4 @@
 const
-    // iconv = require('iconv-lite'),
     { exec } = require('child_process')
 
 const getUserList = (callback) => {exec(
@@ -24,8 +23,5 @@ const checkUser = (enteredUser, callback) => getUserList ((userList) => {
     if (userList.includes(enteredUser)) {callback('Пользователь есть')}
     else {callback('Пользователя нет')}
 } )
-
-// const testFunc = checkUser ('AlexeyT_mai', (result) => console.log(result))
-
 
 module.exports = checkUser
